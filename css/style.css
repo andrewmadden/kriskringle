@@ -69,7 +69,7 @@ footer {
 
 select {
     color: rgb(51, 20, 2);
-    background-color: #c5773870;
+    background-color: #c57738;
     border: none;
     padding: 0.5rem 1rem;
     font-size: 1.5rem;
@@ -95,5 +95,6 @@ th {
 
 td {
     color: #FFF;
+    background-color: rgba(146, 127, 84, 0.9);
 }
 
