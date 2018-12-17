@@ -40,6 +40,14 @@ header > *, footer > * {
 
 header {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 3rem;
 }
 
 section * {
@@ -52,7 +60,54 @@ footer {
 }
 
 .input-field {
-    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+select {
+    color: rgb(51, 20, 2);
+    background-color: #c5773870;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    /* width: 200px; */
+    
+    
+    /* make arrow and background */
+
+    /* background:
+        linear-gradient(45deg, #c57738 50%, #c5773870 50%),
+        linear-gradient(135deg, #c57738 50%, #c5773870 50%),
+        linear-gradient(to right, #c57738D0, #c5773895);
+    background-position:
+        calc(100% - 12px) calc(1em + 2px),
+        calc(100% - 12px) calc(1em + 2px),
+        100% 0;
+    background-size:
+        16px 16px,
+        16px 16px,
+        2em 2em;
+    background-repeat: no-repeat; */
+
+    /* styling and reset */
+
+    border: none;
+    font: 300 1em/100% "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+
+    /* reset */
+
+    border-radius: 0;
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance:none;
+    -moz-appearance:none;
 }
 
 table {
