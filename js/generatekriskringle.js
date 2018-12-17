@@ -54,7 +54,7 @@ function clearTable() {
 }
 
 function generateCousinMatch(year) {
-    let spinner = (year*7)%(cousins.length - 1) + 1;
+    let spinner = (year*9)%(cousins.length - 1) + 1;
     let cousinCopy = [...cousins]; // create copy of cousin array
     // rotates the cousin array randomly, never returning to the original position
     let cousinStart = cousinCopy.splice(spinner);
