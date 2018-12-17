@@ -8,7 +8,7 @@ const next5Years = [];
 for (let i = 0;i < 5;i++) {
     next5Years.push(currentYear+i);
 }
-const cousins = ['Andrew', 'Ashleigh', 'Hannah', 'Georgia', 'Joshua'];
+const cousins = ['Andrew', 'Ashleigh', 'Hannah', 'Georgia', 'Joshua', 'Sam'];
 let cousinsMatched = [];
 
 // populate year selector
@@ -54,7 +54,7 @@ function clearTable() {
 }
 
 function generateCousinMatch(year) {
-    let spinner = (year*7)%4 + 1;
+    let spinner = (year*7)%(cousins.length - 1) + 1;
     let cousinCopy = [...cousins]; // create copy of cousin array
     // rotates the cousin array randomly, never returning to the original position
     let cousinStart = cousinCopy.splice(spinner);
