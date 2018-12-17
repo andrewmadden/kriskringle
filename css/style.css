@@ -1,0 +1,74 @@
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+}
+
+html, body {
+    height: 99%;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #DDD;
+}
+
+body {
+    background-image: url("../images/christmas-balls-christmas-decorations-christmas-lights-1669093.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+header, footer, section {
+    width: 100%;
+    min-height: 1rem;
+    background-color: rgba(219, 190, 122,.7);
+    border-radius: 10px;
+}
+
+header > *, footer > * {
+    margin: 1rem;
+}
+
+header {
+    text-align: center;
+}
+
+section * {
+    margin: 0.5rem 0;
+}
+
+footer {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.input-field {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: inherit;
+}
+
+th, td {
+    padding: 0.5rem;
+    border: 1px solid #444;
+    width: 50%;
+    text-align: center;
+}
+
+th {
+    background-color: rgba(200,200,200,.8);
+}
+
