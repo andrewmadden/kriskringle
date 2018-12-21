@@ -4,7 +4,7 @@
 }
 
 html, body {
-    height: 99%;
+    min-height: 99%;
 }
 
 a, a:link, a:visited {
