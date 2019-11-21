@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/andrewmadden/kriskringle/issues"
   },
-  "homepage": "https://github.com/andrewmadden/kriskringle#readme"
+  "homepage": "https://github.com/andrewmadden/kriskringle#readme",
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  }
 }
