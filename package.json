@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "precommit": "node generator.js"
-  },
+  "scripts": [,
+    "generator": "node generator.js"
+  ],
+  "pre-commit": [
+    "generator"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/andrewmadden/kriskringle.git"
