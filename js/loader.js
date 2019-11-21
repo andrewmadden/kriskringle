@@ -1,5 +1,4 @@
 // get html dom elements
-const yearSelector = document.querySelector(".yearSelect");
 const table = document.querySelector("table");
 
 // get data

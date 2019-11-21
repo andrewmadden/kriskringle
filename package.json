@@ -1,0 +1,20 @@
+{
+  "name": "kriskringle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "node ./js/generator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewmadden/kriskringle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewmadden/kriskringle/issues"
+  },
+  "homepage": "https://github.com/andrewmadden/kriskringle#readme"
+}
