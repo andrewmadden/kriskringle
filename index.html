@@ -7,40 +7,36 @@
 
     <!-- favicon -->
     <link rel="shortcut icon" type="image/svg" href="./images/santa-hat.svg">
-    
+
     <!-- custom css -->
     <link rel="stylesheet" href="./css/style.css">
-    
-    <title>Dyer Cousin's Kris Kringle</title>
+
+    <title>Kris Kringle</title>
 </head>
 <body>
-    <header>
-        <img src="images/001-santa-claus.svg" alt="santa claus with presents">
-        <h1>The Inaugural Annual Dyer Cousin Kris Kringle</h1>
-        <img src="images/002-tree.svg" alt="christmas tree and person">
-    </header>
-    <section>
-        <div class="input-field">
-            <label for="year">Year</label>
-            <div class="custom-select">
-                <select class="yearSelect" name="year" id="year"></select>
-            </div>
-        </div>
-        <table>
-            <tr>
-                <th>Giver</th>
-                <th>Receiver</th>
-            </tr>
-        </table>
-    </section>
-    <section class="rules">
-        <h2>The Rules:</h2>
-        <p>The limit is <strong>$20</strong>. You may find inspiration from large unnamed shopping emporiums to small second hand good stores. The choice is yours...</p>
-    </section>
-    <footer>
-        <div>Website made by <a href="https://andrewmadden.tech" target="_blank" title="Andrew Madden Website">Andrew Madden</a></div>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> and <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>. Licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    </footer>
-    <script src="./js/generatekriskringle.js"></script>
+    <div class="main-content">
+        <header>
+            <img src="images/001-santa-claus.svg" alt="santa claus with presents">
+            <h1>Christmas with the Dyers - Kris Kringle edition</h1>
+            <img src="images/002-tree.svg" alt="christmas tree and person">
+        </header>
+        <section class="rules">
+            <h2>The Rules</h2>
+            <p>This year is a little special... we're going to France! So we're going to give each other 2 gifts this year. The first from the country you live in, and one from somewhere special in Europe! The limit is $20 (or equivalent) and €20 for each respective gift. Good hunting!</p>
+        </section>
+        <section>
+            <table class="match-table">
+                <tr class="heading-row">
+                    <th>Giver</th>
+                    <th>Receiver</th>
+                </tr>
+            </table>
+        </section>
+        <footer>
+            <span>Website made by <a href="https://andrewmadden.tech" target="_blank" title="Andrew Madden Website">Andrew Madden</a> inspired by 70s pattern design</span>
+            <span>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> and <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>. Licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></span>
+        </footer>
+    </div>
+    <script src="js/loader.js"></script>
 </body>
 </html>

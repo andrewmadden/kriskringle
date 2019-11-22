@@ -3,8 +3,8 @@
     color: #222;
 }
 
-html, body {
-    min-height: 99%;
+html {
+    min-height: 100vh;
 }
 
 a, a:link, a:visited {
@@ -17,25 +17,46 @@ a:hover {
 }
 
 body {
-    background-image: url("../images/christmas-balls-christmas-decorations-christmas-lights-v3.jpg");
-    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-color: #c79110;
+    background-image: url("../images/background_trees_green.svg");
     background-size: cover;
-    background-attachment: fixed;
-    
+    color: #DDDDDD;
+}
+
+.main-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    align-items: center;
+
+    max-width: 66%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 2rem;
+
+    background-color: #5b2c29F2;
 }
 
-header, footer, section {
+section {
     width: 100%;
-    min-height: 1rem;
-    background-color: rgba(219, 190, 122,.7);
-    border-radius: 10px;
 }
 
-header > *, footer > * {
+header > * {
     margin: 1rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: coral;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.7rem;
+    color: #321632;
+    padding: 0.7rem 0;
 }
 
 header {
@@ -54,11 +75,6 @@ section * {
     margin: 0.5rem 0;
 }
 
-footer {
-    font-size: 0.7rem;
-    text-align: center;
-}
-
 .input-field {
     font-size: 2rem;
     display: flex;
@@ -67,47 +83,88 @@ footer {
     align-items: center;
 }
 
-select {
-    color: rgb(51, 20, 2);
-    background-color: rgba(146, 127, 84);
-    border: none;
-    box-shadow: 2px 2px 2px #222;
-    padding: 0.5rem 1rem;
-    font-size: 1.5rem;
-    /* width: 200px; */
-}
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
-    width: inherit;
-}
-
-th, td {
-    padding: 0.5rem;
-    border: 1px solid #444;
-    width: 50%;
-    text-align: center;
+    width:100%;
+    max-width: 400px;
+    margin: 4rem auto;
 }
 
 th {
-    background-color: rgba(200,200,200,.8);
+    padding: 1rem 0;
+    color: #321632;
+    opacity: 1;
+}
+
+.heading-row {
+    background: linear-gradient(90deg, #d3654c22 0%, #d3654c 10%, #d3654c 90%, #d3654c22 100%) !important;
+    opacity: 1;
+}
+
+.heading-row:hover {
+    transform: none;
 }
 
 td {
-    color: #FFF;
-    background-color: rgba(146, 127, 84, 0.9);
+    text-align: center;
+    padding: 0.5rem;
 }
 
-.rules {
-    display: column;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+tr {
+    opacity: 0.8;
+    transition: all .25s ease-in-out;
+}
+
+tr:nth-child(even) {
+    background: linear-gradient(90deg, #d3a6bc11 0%, #d3a6bc88 10%, #d3a6bc88 90%, #d3a6bc11 100%);
+    /*background-color: #d3a6bc44;*/
+}
+
+tr:nth-child(odd) {
+    background: linear-gradient(90deg, #94495c11 0%, #94495c88 10%, #94495c88 90%, #94495c11 100%);
+}
+
+tr:hover {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 .rules > * {
     margin: 1rem;
+}
+
+/* iPads (portrait) ----------- */
+@media (max-width : 1024px) {
+    .main-content {
+        max-width: 75%;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media (max-width : 480px) {
+    .main-content {
+        max-width: 85%;
+        padding: 1rem;
+    }
+
+
+    h1 {
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    header {
+        flex-direction: column;
+    }
 }
 

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generator": "node generator.js"
+    "generator": "node ./js/generator.js"
     },
   "pre-commit": [
     "generator"
