@@ -30,7 +30,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - generate_matches:
+      - run:
           name: Generate new matches
           filters:
             tags:
