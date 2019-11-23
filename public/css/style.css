@@ -146,7 +146,7 @@ tr:hover {
 }
 
 
-/* Smartphones (portrait) ---------- */
+/* Smartphones (portrait) --------- */
 @media (max-width : 480px) {
     .main-content {
         max-width: 85%;
