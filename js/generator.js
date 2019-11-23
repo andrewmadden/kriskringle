@@ -1,4 +1,4 @@
-console.log('hello world');
+console.log('Generating new matches...');
 
 // Load the participants to be matched.
 const data = require('./files/participants.json');
