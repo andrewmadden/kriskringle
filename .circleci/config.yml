@@ -23,7 +23,7 @@ jobs:
 
       - run:
           name: Install dependencies
-          command: npm ci --only=production
+          command: npm install --only=production
 
       - save_cache:
           paths:
