@@ -2,9 +2,9 @@
   "name": "kriskringle",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "public/index.js",
   "scripts": {
-    "generator": "node ./js/generator.js"
+    "generator": "node public/js/generator.js"
     },
   "pre-commit": [
     "generator"
