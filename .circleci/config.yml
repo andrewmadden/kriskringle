@@ -30,17 +30,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run:
-          name: Generate new matches
-          # Only generate new matches if the phrase "generate" is in commit message.
-          command: |
-            last_commit="$(git log -1 --pretty=%B | cat)"
-
-            if [[ ${last_commit} == *generate* ]]
-            then
-              node public/js/generator.js
-            fi
-
       - aws-s3/sync:
           from: public
           to: s3://kriskringle.andrewmadden.tech
