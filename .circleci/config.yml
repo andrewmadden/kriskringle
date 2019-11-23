@@ -34,7 +34,7 @@ jobs:
           name: Generate new matches
           # Only generate new matches if the phrase "generate" is in commit message.
           command: |
-            last_commit="$(git log -1 --pretty=%B | cat | grep generate)"
+            last_commit="$(git log -1 --pretty=%B | cat)"
 
             if [[ ${last_commit} == *[generate]* ]]
             then
