@@ -7,7 +7,6 @@
     "generator": "node public/js/generator.js"
     },
   "pre-commit": [
-    "generator"
   ],
   "repository": {
     "type": "git",
