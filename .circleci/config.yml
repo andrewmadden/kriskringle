@@ -36,7 +36,7 @@ jobs:
           command: |
             last_commit="$(git log -1 --pretty=%B | cat)"
 
-            if [[ ${last_commit} == *[generate]* ]]
+            if [[ ${last_commit} == *generate* ]]
             then
               node public/js/generator.js
             fi
