@@ -30,6 +30,13 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+      - generate_matches:
+          name: Generate new matches
+          filters:
+            tags:
+              only: /generate/
+          command: node public/js/generator.js
+
       - aws-s3/sync:
           from: public
           to: s3://kriskringle.andrewmadden.tech
