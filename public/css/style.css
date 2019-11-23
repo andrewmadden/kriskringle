@@ -95,11 +95,7 @@ th {
     padding: 1rem 0;
     color: #321632;
     opacity: 1;
-}
-
-.heading-row {
-    background: linear-gradient(90deg, #d3654c22 0%, #d3654c 10%, #d3654c 90%, #d3654c22 100%) !important;
-    opacity: 1;
+    background-color: #d3654c;
 }
 
 .heading-row:hover {
