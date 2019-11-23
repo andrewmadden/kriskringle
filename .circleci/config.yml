@@ -32,10 +32,14 @@ jobs:
 
       - run:
           name: Generate new matches
-          filters:
-            tags:
-              only: /generate/
-          command: node public/js/generator.js
+          # Only generate new matches if the phrase "generate" is in commit message.
+          command: |
+            last_commit="$(git log -1 --pretty=%B | cat | grep generate)"
+
+            if [[ ${last_commit} == *[generate]* ]]
+            then
+              node public/js/generator.js
+            fi
 
       - aws-s3/sync:
           from: public
