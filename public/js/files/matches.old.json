@@ -2,47 +2,47 @@
     "matches": [
         {
             "giver": "Julie",
-            "receiver": "Georgia"
-        },
-        {
-            "giver": "David",
             "receiver": "Kate"
         },
         {
-            "giver": "Andrew",
-            "receiver": "Joshua"
-        },
-        {
-            "giver": "Hannah",
-            "receiver": "Ashleigh"
-        },
-        {
-            "giver": "Ann",
-            "receiver": "David"
-        },
-        {
-            "giver": "Adam",
+            "giver": "David",
             "receiver": "Ann"
         },
         {
-            "giver": "Kate",
-            "receiver": "Julie"
+            "giver": "Andrew",
+            "receiver": "Georgia"
         },
         {
-            "giver": "Georgia",
+            "giver": "Hannah",
+            "receiver": "Adam"
+        },
+        {
+            "giver": "Ann",
             "receiver": "Sam"
         },
         {
-            "giver": "Joshua",
+            "giver": "Adam",
             "receiver": "Hannah"
         },
         {
-            "giver": "Ashleigh",
+            "giver": "Kate",
+            "receiver": "Ashleigh"
+        },
+        {
+            "giver": "Georgia",
             "receiver": "Andrew"
         },
         {
+            "giver": "Joshua",
+            "receiver": "Julie"
+        },
+        {
+            "giver": "Ashleigh",
+            "receiver": "David"
+        },
+        {
             "giver": "Sam",
-            "receiver": "Adam"
+            "receiver": "Joshua"
         }
     ]
 }
