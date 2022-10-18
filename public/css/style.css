@@ -19,9 +19,7 @@ a:hover {
 body {
     margin: 0;
     padding: 0;
-    background-color: #c79110;
-    background-image: url("../images/background_trees_green.svg");
-    background-size: cover;
+    background-color: #111;
     color: #DDDDDD;
 }
 
@@ -34,8 +32,6 @@ body {
     min-height: 100vh;
     margin: 0 auto;
     padding: 2rem;
-
-    background-color: #5b2c29F2;
 }
 
 section {
@@ -50,12 +46,11 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: coral;
+    background-color: #222;
     width: 100vw;
     display: flex;
     justify-content: space-around;
     font-size: 0.7rem;
-    color: #321632;
     padding: 0.7rem 0;
 }
 
@@ -93,9 +88,7 @@ table {
 
 th {
     padding: 1rem 0;
-    color: #321632;
-    opacity: 1;
-    background-color: #d3654c;
+    background-color: #080f09;
 }
 
 .heading-row:hover {
@@ -108,7 +101,6 @@ td {
 }
 
 tr {
-    opacity: 0.8;
     transition: all .25s ease-in-out;
 }
 
@@ -163,3 +155,10 @@ tr:hover {
     }
 }
 
+canvas {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }

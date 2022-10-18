@@ -1,48 +1,55 @@
-// Get insertion point.
-const table = document.querySelector("table");
+/**
+ * Set up the page.
+ */
 
-loadData();
-
-function loadData() {
-// get data
-    var request = new XMLHttpRequest();
-    request.open('GET', 'js/files/matches.json', true);
-    request.onload = function() {
-        if (request.status >= 200 && request.status < 400) {
-            // Success!
-            const data = JSON.parse(request.responseText);
-            const matches = data.matches;
-            populateReceiver(matches);
-        } else {
-            // We reached our target server, but it returned an error
-            loadData();
-        }
-    };
-
-    request.send();
+/**
+ * Load the data from a file.
+ */
+loadData = () => {
+    window.console.debug('loadData called');
+    fetch('/js/files/matches.json', {mode: 'no-cors'})
+        .then(response => response.json())
+        .then(json => populateTable(json.matches));
 }
 
-function populateReceiver(matches) {
-    clearTable();
+/**
+ * Populate the table with JSON data.
+ *
+ * @param matches JSON object.
+ */
+populateTable = (matches) => {
+    const table = document.querySelector("table");
+    clearTable(table);
+    window.console.log(matches);
 
-    // create table with match data
+    // Create table with match data.
     matches.forEach((match) => {
         let row = document.createElement('tr');
+        row.classList.add('match');
         let giver = document.createElement('td');
+        giver.classList.add('giver')
+        giver.appendChild(document.createTextNode(match['giver']));
         let receiver = document.createElement('td');
-        let giverText = document.createTextNode(match['giver']);
-        let receiverText = document.createTextNode(match["receiver"]);
-        giver.appendChild(giverText);
-        receiver.appendChild(receiverText);
+        receiver.classList.add('receiver');
+        receiver.appendChild(document.createTextNode(match["receiver"]));
         row.appendChild(giver);
         row.appendChild(receiver);
         table.appendChild(row);
     });
 }
 
-function clearTable() {
+/**
+ * Clear the table of data.
+ *
+ * @param table HTML DOM Element for table.
+ */
+clearTable = (table) => {
     while (table.childElementCount > 1) {
         table.removeChild(table.lastChild);
     }
 }
 
+window.onload = () => {
+    window.console.debug('onload called');
+    loadData.call();
+}
