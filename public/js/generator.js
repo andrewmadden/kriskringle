@@ -19,6 +19,8 @@ filesystem.writeFileSync(__dirname + '/files/matches.json', datastring);
 /**
  * Validate the data from the participants file.
  *
+ * TODO: implement.
+ *
  * @param participants
  * @returns {boolean}
  */
@@ -38,7 +40,14 @@ function validateParticipants(participants) {
  */
 function validateMatches(givers, receivers) {
     for (let i = 0; i < givers.length; i++) {
+        // Check noone gets themselves.
         if (givers[i] === receivers[i]) {
+            return false;
+        }
+
+        // Check there are no closed pairs.
+        receiver_index = givers.findIndex((giver) => giver === receivers[i]);
+        if (receivers[receiver_index] === givers[i]) {
             return false;
         }
     }
